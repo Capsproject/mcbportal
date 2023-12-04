@@ -1,8 +1,8 @@
 <?php
 defined('server') ? null : define("server", "localhost");
-defined('user') ? null : define ("user", "root") ;
-defined('pass') ? null : define("pass","");
-defined('database_name') ? null : define("database_name", "mcbportal") ;
+defined('user') ? null : define ("user", "u801089727_mcb_user") ;
+defined('pass') ? null : define("pass","u801089727_rooT");
+defined('database_name') ? null : define("database_name", "u801089727_mcbportal") ;
 
 $this_file = str_replace('\\', '/', __File__) ;
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
