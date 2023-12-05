@@ -179,7 +179,7 @@ $currentyear = date('Y');
         <nav class="navbar1" >
             <div id="close" class="fas fa-times"></div>
 
-            <a href="index.php" class="nav_item" style="color: #fff;">home</a>
+            <a href="index.php" class="nav_item" style="color: #fff;">Home</a>
            
             
            

@@ -40,9 +40,7 @@ switch ($action) {
 		// 	message("All field is required!","error");
 		// 	redirect('index.php?view=add');
 
-   		if ($_POST['TIME_FROM'] =="" OR $_POST['TIME_TO'] == "" 
-	   		OR	$_POST['sched_day'] == ""  
-	   		OR  $_POST['sched_semester'] == ""
+   		if ( $_POST['sched_semester'] == ""
 		    OR $_POST['COURSE_ID'] == ""  
 			OR $_POST['sched_room'] == "" ) {
 		 
@@ -106,11 +104,8 @@ switch ($action) {
 			$currentyear =  date("Y");
 
 			$sched = New Schedule(); 
-			$sched->sched_time 		= $_POST['TIME_FROM'] .'-'.$_POST['TIME_TO'];
-			$sched->TIME_FROM 		= $_POST['TIME_FROM'];
-			$sched->TIME_TO 		= $_POST['TIME_TO'];
-			// $sched->AMPM 			= $_POST['AMPM'];
-			$sched->sched_day		= $_POST['sched_day']; 
+			
+		 
 			$sched->sched_semester 	= $_POST['sched_semester'];
 			$sched->sched_sy		= $currentyear . '-'.$nextyear;  
 			$sched->sched_room		= $_POST['sched_room'];
@@ -183,10 +178,8 @@ switch ($action) {
 			$currentyear =  date("Y");
 
 			$sched = New Schedule(); 
-			$sched->sched_time 		= $_POST['TIME_FROM'] .'-'.$_POST['TIME_TO'];
-			$sched->TIME_FROM 		= $_POST['TIME_FROM'];
-			$sched->TIME_TO 		= $_POST['TIME_TO']; 
-			$sched->sched_day		= $_POST['sched_day']; 
+			
+			
 			$sched->sched_semester 	= $_POST['sched_semester'];  
 			$sched->sched_room		= $_POST['sched_room'];
 			$sched->SECTION			= $_POST['SECTION'];  

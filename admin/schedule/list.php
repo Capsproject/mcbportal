@@ -8,10 +8,10 @@
 <div class="row">
       <div class="col-lg-12">
        	 <div class="col-lg-6">
-            <h1 class="page-header">List of Schedule  <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> Set New Schedule</a>  </h1>
+            <h1 class="page-header">List of Instructor Per Subject  <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> Set New Instructor</a>  </h1>
        		</div>
        		<div class="col-lg-6" >
-       			<img style="float:right; width:140px; height: 140px;" src="<?php echo web_root; ?>img/logonbg.png" >
+       			
        		</div>
        		</div>
         	<!-- /.col-lg-12 -->
@@ -25,11 +25,8 @@
 				  		<!-- <th>#</th> -->
 				  		<th>
 				  		 <!-- <input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');">  -->
-				  		 Time</th>
-				  		<th>Days</th> 
-				  		<th>Subject</th>
+				  		 Subject</th>
 				  		<th>Semester</th>
-				  		<th>School Year</th>
 				  		<th>Course and Year</th>
 				  		<th>Room</th> 
 				  		<th>Section</th>
@@ -52,12 +49,11 @@
 						foreach ($cur as $result) {
 				  		echo '<tr>';
 				  		// echo '<td width="5%" align="center"></td>';
-				  		echo '<td>' . $result->sched_time.'</a></td>';
+				  		
 				  		// echo '<td>'. time($result->TIME_FROM).'-'.time($result->TIME_TO).$result->AMPM.'</td>';
-				  		echo '<td>'. $result->sched_day.'</td>';
+				  		
 				  		echo '<td>' . $result->SUBJ_CODE.'</a></td>';
 				  		echo '<td>'. $result->sched_semester.'</td>';
-				  		echo '<td>'. $result->sched_sy.'</td>';
 				  		echo '<td>' . $result->COURSE_NAME.'-' . $result->COURSE_LEVEL.'</td>';
 				  		echo '<td>'. $result->sched_room.'</td>'; 
 				  		echo '<td>'. $result->SECTION.'</td>'; 

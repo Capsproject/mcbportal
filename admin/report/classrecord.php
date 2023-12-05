@@ -83,7 +83,7 @@ if (isset($_POST['Subject'])) {
           <thead>
             <th><label>Instructor :</label></th><th  ><label><?php echo  isset($resInst->INST_NAME) ? $resInst->INST_NAME :'';?></label></th> 
             <th></th>
-            <th>Day(s)/Time</th><th><?php echo isset($cur->sched_time) ? $cur->sched_time . ' / ' .$cur->sched_day  : ''; ?></th>
+           
             <!-- <th><label>Course/Year :</label></th><th colspan="2"><label><?php echo isset($_POST['Course']) ? $_POST['Course'] : '';?></label></th>  -->
           </thead>
            <thead> 
@@ -109,7 +109,7 @@ if (isset($_POST['Subject'])) {
               <th>Contact No.</th>
               <th>Civil Status</th>
               <th>Course/Year</th>
-              <th>Status</th>
+             
             </tr>
             </thead>
             <tbody>
@@ -150,7 +150,7 @@ if (isset($_POST['Subject'])) {
                         <td><?php echo $result->CONTACT_NO;?></td>
                         <td><?php echo $result->STATUS;?></td>
                         <td><?php echo $result->COURSE_NAME .'-'.$result->COURSE_LEVEL;?></td>
-                        <td><?php echo $result->student_status;?></td>
+                      
                       </tr> 
               <?php  
                          $tot =  count($cur);

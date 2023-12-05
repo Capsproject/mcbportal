@@ -48,7 +48,7 @@ require_once("../../include/initialize.php");
     <div class="row">
       <div class="col-xs-12">
         <h4 class="page-header ">
-          <i class="fa fa-globe"></i> Green Valley Foundation College INC.
+          <i class="fa fa-globe"></i>MABINI COLLEGE OF BATANGAS 
            <small class="pull-right">Printed Date: <?php echo date('m/d/Y'); ?></small>
         </h4>
       </div>

@@ -24,7 +24,7 @@
         <nav class="navbar1">
             <div id="close" class="fas fa-times"></div>
 
-            <a href=""href="#home" class="nav_item">home</a>
+            <a href=""href="#home" class="nav_item">Home</a>
        
             <a href="index.php?q=enrol" class="nav_item">Login</a>
 

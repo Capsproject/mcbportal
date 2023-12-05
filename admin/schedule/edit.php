@@ -92,53 +92,10 @@
                     </div>
                   </div> -->
 
-                    <div class="form-group">
-                    <div class="col-md-8">
-                      <label class="col-md-4 control-label" for=
-                      "sched_time">Time:</label>
-                      <div class="col-md-8">
-                        <div class="row">
-                             <label class="col-md-2">From</label>
-                         
-                          <div class="col-md-4 input-group">
-                           <div class="input-group-addon"> 
-                            <i class="fa fa-clock-o"></i>
-                          </div>
-                           <input class="form-control input-sm time" id="TIME_FROM" name="TIME_FROM"  
-                           type="text"  data-inputmask="'alias': 'hh:mm t'" data-mask value="<?php echo $res->TIME_FROM; ?>" >
-                          </div>
-                       
-                          <label class="col-md-2">To</label>
-                         
-                          <div class="col-md-4 input-group">
-                           <div class="input-group-addon"> 
-                              <i class="fa fa-clock-o"></i>
-                            </div>
-                           <input class="form-control input-sm time" id="TIME_TO" name="TIME_TO" data-inputmask="'alias': 'hh:mm t'" 
-                           type="text"  data-mask value="<?php echo $res->TIME_TO; ?>">
-                             
-                          </div>
-                          
-                        </div> 
-                        
-                      </div> 
-                    
-                    </div>
-                  </div>
+                
+                  
 
-                  <div class="form-group">
-                    <div class="col-md-8">
-                      <label class="col-md-4 control-label" for=
-                      "sched_day">Days:</label>
-
-                      <div class="col-md-8">
-                        
-                         <input class="form-control input-sm" id="sched_day" name="sched_day" placeholder=
-                            "Day" type="text" value="<?php echo $res->sched_day; ?>">
-                      </div>
-                    </div>
-                  </div>
-
+                
                    
  
                   <div class="form-group">

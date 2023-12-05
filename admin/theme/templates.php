@@ -185,6 +185,21 @@ $singleuser = $user->single_user($_SESSION['ACCOUNT_ID']);
                              <a href="<?php echo web_root; ?>admin/instructor/index.php" ><i class="fa fa-group fa-fw"></i>Instructor </a>
             
                         </li>
+                        <tr>
+    
+
+<?php if ($_SESSION['ACCOUNT_TYPE'] === 'Administrator'): ?>
+   
+                           <li>
+                             <a href="<?php echo web_root; ?>admin/schedule/index.php" ><i class="fa fa-group fa-fw"></i>Set Instructor per Subject </a>
+            
+                        </li>
+<?php endif; ?>
+
+                       
+
+     
+                       
                         <li>
                              <a href="<?php echo web_root; ?>admin/maintenance/index.php" ><i class="fa fa-gear fa-fw"></i>  Set Semester </a>
             
@@ -197,6 +212,12 @@ $singleuser = $user->single_user($_SESSION['ACCOUNT_ID']);
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="<?php echo web_root; ?>admin/report/index.php?view=studentlist">Students</a>
+                                    <!-- <ul  class="nav nav-third-level">
+                                        <li>List of Student</li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="<?php echo web_root; ?>admin/report/index.php?view=classrecord">List of Student per Instructor</a>
                                     <!-- <ul  class="nav nav-third-level">
                                         <li>List of Student</li>
                                     </ul> -->
