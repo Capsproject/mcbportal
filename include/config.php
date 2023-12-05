@@ -14,3 +14,7 @@ $server_root = str_replace ('config/config.php' ,'', $this_file);
 define ('web_root' , $web_root);
 define('server_root' , $server_root);
 ?>
+<!--defined('server') ? null : define("server", "localhost");
+defined('user') ? null : define ("user", "u801089727_mcb_user") ;
+defined('pass') ? null : define("pass","u801089727_rooT");
+defined('database_name') ? null : define("database_name", "u801089727_mcbportal") ;-->
