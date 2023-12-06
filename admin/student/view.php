@@ -69,7 +69,7 @@
 
 ?>
 
-<form action="controller.php?action=edit" class="form-horizontal" method="post" >
+<form action="" class="form-horizontal" method="post" >
   <div class="table-responsive">
   <div class="col-md-8"><h2>Student Information</h2></div>
     <table class="table"> 
@@ -174,12 +174,7 @@
         <td><label>Contact No.</label></td>
         <td colspan="2"><input  required="true" class="form-control input-md" id="GCONTACT" name="GCONTACT" placeholder="Contact Number" type="text"value="<?php echo isset($resguardian->GCONTACT) ? $resguardian->GCONTACT : ''; ?>"></td>
       </tr>
-      <tr>
-      <td></td>
-        <td colspan="5">  
-          <button class="btn btn-success btn-lg" name="save" type="submit">Save</button>
-        </td>
-      </tr>
+    
 
 
     

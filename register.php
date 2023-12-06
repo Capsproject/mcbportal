@@ -52,7 +52,7 @@ if ($res) {
 
 
 
-$_SESSION['STUDID'] 	  =  $_POST['IDNO'];
+$_SESSION['STUDID'] 	  =  $_POST['ID NO'];
 $_SESSION['FNAME'] 	      =  $_POST['FNAME'];
 $_SESSION['LNAME']  	  =  $_POST['LNAME'];
 $_SESSION['MI']           =  $_POST['MI'];
